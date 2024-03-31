@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 interface SidenavbarProps {
     activeNavItem: string;
@@ -49,10 +48,7 @@ interface SidenavbarProps {
                         </div>
                     </div>
                 </div>
-
             </div>
-      
-        
     );
 };
 
