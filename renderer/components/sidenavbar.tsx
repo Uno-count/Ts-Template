@@ -21,7 +21,7 @@ interface SidenavbarProps {
                     <div>
                         <ul className="flex items-center flex-col space-y-10">
                             <li 
-                                className={`transform hover:translate-y-2 transition-transform ease-in duration-200 hover:rounded-3xl pt-0 pb-0 px-10 hover:bg-cyan-light hover:text-gray-dark text-white ${activeNavItem === 'request' && 'bg-cyan-light text-gray-dark rounded-3xl pt-0 pb-0 px-10'}`}
+                                className={`transform hover:translate-y-2 transition-transform ease-in duration-200 pt-0 pb-0 px-10 hover:bg-cyan-light hover:text-gray-dark hover:rounded-3xl ${activeNavItem === 'request' ? 'text-gray-dark bg-cyan-light rounded-3xl' : 'text-white'}`}
                                 onClick={() => setActiveNavItem('request')}
                                 >
                                     <a href="#" className="flex items-center h-10 ">
@@ -29,7 +29,7 @@ interface SidenavbarProps {
                                     </a>
                             </li>
                             <li 
-                                className={`transform hover:translate-y-2 transition-transform ease-in duration-200 hover:rounded-3xl pt-0 pb-0 px-5 hover:bg-cyan-light hover:text-gray-dark text-white ${activeNavItem === 'escalation' && 'bg-cyan-light text-gray-dark rounded-3xl pt-0 pb-0 px-5'}`}
+                                className={`transform hover:translate-y-2 transition-transform ease-in duration-200 pt-0 pb-0 px-5 hover:bg-cyan-light hover:text-gray-dark hover:rounded-3xl ${activeNavItem === 'escalation' ? 'text-gray-dark bg-cyan-light rounded-3xl' : 'text-white'}`}
                                 onClick={() => setActiveNavItem('escalation')}
                                 >
                                     <a href="#" className="flex items-center h-10">                      
