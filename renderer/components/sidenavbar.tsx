@@ -3,42 +3,44 @@ import React from 'react';
 
 const Sidenavbar: React.FC = () => {
     return (
-        <>
-            <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
-
-            <div className="relative min-h-screen flex flex-row bg-gray-100">
-                <div className="flex flex-col w-full sm:w-56 bg-white overflow-hidden">
-
-                    <div className="flex items-center justify-center h-20 mb-12 mt-12">
-                        <div className="avatar placeholder">
-                            <div className="bg-neutral text-neutral-content rounded-full w-32">
-                                <span className="text-3xl">S</span>
+            <div className="flex w-[256px] flex-col h-screen justify-between border-r border-gray-light">
+                <div>
+                    <div className='flex items-center justify-center mt-10 mb-10'>
+                        <div className="avatar">
+                            <div className="w-[152px] rounded-full">
+                                <img src="/images/avatar_sample.png" />
                             </div>
                         </div>
+                    </div> 
+            
+                    <div>
+                        <ul className="flex items-center flex-col space-y-10">
+                            <li className='transform hover:translate-y-2 transition-transform ease-in duration-200 hover:rounded-3xl pt-0 pb-0 px-10 hover:bg-cyan-light hover:text-gray-dark text-white'>
+                                <a href="#" className="flex items-center h-10 ">
+                                    <span className='text-lg font-normal font-mono'>Request</span>
+                                </a>
+                            </li>
+                            <li className='transform hover:translate-y-2 transition-transform ease-in duration-200 hover:rounded-3xl pt-0 pb-0 px-5 hover:bg-cyan-light hover:text-gray-dark text-white'>
+                                <a href="#" className="flex items-center h-10">                      
+                                    <span className='text-lg font-normal font-mono'>Escalation</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <ul className="flex flex-col space-y-4">
-                        <li>
-                            <a href="#" className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800 px-4">
-                                <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><img className='w-8' src="/images/robot 1.png" alt="" /></span>
-                                <span className="text-lg font-medium">Request</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800 px-4">
-                                <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><img className='w-8' src="/images/robot.png" alt="" /></span>
-                                <span className="text-lg font-medium">Escalation</span>
-                            </a>
-                            <img src="../public/images/robot.png" alt="" />
-                        </li>
-                        
-                    </ul>
-                    <div className='flex flex-row justify-center absolute bottom-0'>
-                        <p className="text-sm text-base-300">Ts Template Beta</p>
+                </div>
+        
+                <div className='flex justify-center'>
+                    <div className="w-full mt-auto">
+                        <div className='flex justify-center items-center py-4'>
+                            <span className='text-gray-400'>TS_Template Version 3.0</span>
+                        </div>
                     </div>
                 </div>
+
             </div>
-        </>
+      
+        
     );
 };
 

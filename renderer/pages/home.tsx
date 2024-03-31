@@ -10,7 +10,9 @@ export default function HomePage() {
       <Head>
         <title>TS Template</title>
       </Head>
-     <Sidenavbar />
+      <div className='bg-gray-dark min-h-screen'>
+        <Sidenavbar />
+      </div>
     </React.Fragment>
   )
 }
