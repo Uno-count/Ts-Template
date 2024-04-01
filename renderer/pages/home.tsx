@@ -12,9 +12,9 @@ const HomePage: React.FC = () => {
       <Head>
         <title>TS Template</title>
       </Head>
-      <div className='flex bg-gray-dark min-h-screen'>
+      <div className='flex bg-gray-darker min-h-screen'>
         <Sidenavbar activeNavItem={activeNavItem} setActiveNavItem={setActiveNavItem} />
-        <div className="flex-grow">
+        <div className="flex-grow m-5">
           {activeNavItem === 'escalation' && <EscalationForm />} 
           {activeNavItem === 'request' && <RequestForm />} 
         </div>

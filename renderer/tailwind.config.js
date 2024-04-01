@@ -13,6 +13,7 @@ module.exports = {
       'cyan-light': '#55FFF5',
       'gray-light': '#F9F9F9',
       'gray-dark': '#3A3A3A',
+      'gray-darker': '#222222',
     },
     fontSize: {
       sm: ['16px', '16px'],
